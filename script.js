@@ -1,4 +1,3 @@
-// (✅ Your full script EXACTLY as before, unchanged.)
 
 // Elements
 const taskInput = document.getElementById("taskInput");
