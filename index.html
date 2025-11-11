@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Voice To-Do App (AI Theme)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- AI THEME BACKGROUND -->
+  <div class="ai-bg"></div>
+  <div class="ai-orb orb1"></div>
+  <div class="ai-orb orb2"></div>
+  <div class="ai-lines"></div>
+
+  <div class="app" role="application" aria-label="Voice To-Do App">
+    <h1>🎙️ Voice To-Do App</h1>
+
+    <div class="controls-row">
+      <div class="input-box">
+        <input id="taskInput" type="text" placeholder="Enter a task..." aria-label="Task input" />
+        <button id="addBtn" aria-label="Add task">Add</button>
+      </div>
+
+      <div class="voice-box">
+        <button id="voiceBtn" class="voice" aria-pressed="false" aria-label="Start voice recognition">🎤 Speak</button>
+        <div id="status" class="status" aria-live="polite">Microphone ready</div>
+      </div>
+    </div>
+
+    <div class="transcript">
+      <strong>Heard:</strong> <span id="lastTranscript">—</span>
+      <small id="confidence"></small>
+    </div>
+
+    <ul id="todoList" aria-live="polite"></ul>
+
+    <p class="hint">Try voice commands: “add task buy milk”, “delete task 2”, “mark task 1 done”, “clear all”.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
